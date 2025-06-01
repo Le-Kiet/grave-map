@@ -34,6 +34,7 @@ yarn-error.log
 
 # React or Vite frontend
 my-react-app/
+DemoProject/
 dist/
 
 # IDE/editor files
