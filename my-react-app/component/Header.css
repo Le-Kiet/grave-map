@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 12px; 
+    background-color: white;
+    padding: 16px;
+    border-bottom: 2px solid rgb(205, 205, 205);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    background-color: white; 
+}
+.header-slider{
+    background-color: white;
+    justify-content: center;
+    --Paper-shadow: none !important;
+    width:400px;
+    border-bottom:4px solid rgb(205, 205, 205)
+}
+.user{
+    display: flex;
+    align-items: center; 
+    div {
+        margin: 6px;
+    }
+}
+.avatar {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid #007BFF; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.avatar img {
+    width: auto;
+    height: 100%;
+}
+.admin{
+    align-items: center;
+    display: flex;
+    div {
+        padding: 6px;
+    }
+}

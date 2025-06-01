@@ -1,0 +1,19 @@
+.demo-dialog{
+    width:fit-content;
+
+}
+.dialog-content-demo{
+    display: grid;
+    grid-template-columns: 2fr 1.8fr;
+    gap: 10px;
+}
+.demo{
+    margin:16px 0px;
+    font-size: 28px !important;
+}
+.mobile-form {
+  font-size: 14px !important;
+}
+.mobile-form * {
+  font-size: inherit;
+}

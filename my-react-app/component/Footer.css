@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 14px; 
+    background-color: white;
+    padding: 6px;
+    border-bottom: 2px solid rgb(205, 205, 205);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: white; 
+    div{
+        align-items: center;
+        display: flex;
+    }
+}

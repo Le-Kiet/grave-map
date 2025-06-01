@@ -1,0 +1,65 @@
+.login-page {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/thuy-loi.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh; 
+    width: 100vw; 
+    justify-items: center;
+    
+}
+/* .login-page {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-image: url("../../assets/thuy-loi.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100vw; 
+} */
+
+.logo-container {
+    margin:auto 10px;
+    width: 100%; /* Hoặc chiều rộng cụ thể mà bạn muốn */
+    max-width: 100px; /* Giới hạn chiều rộng tối đa */
+    height: 100px; /* Chiều cao cố định để tạo hình vuông */
+    overflow: hidden; /* Ẩn phần hình ảnh ra ngoài */
+    border-radius: 50%;
+    margin:20px
+}
+
+.logo {
+    width: 100%; /* Đặt chiều rộng 100% */
+    height: auto; /* Giữ tỷ lệ ban đầu */
+    object-fit: cover; /* Làm cho hình ảnh bao phủ toàn bộ khu vực chứa */
+}
+.login-form{
+    background-color: white;
+    border-radius: 12px;
+    padding:8px;
+    width: fit-content;
+}
+.login-input{
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:12px;
+    label{
+        padding-right:8px;
+        min-width: 75px;
+    }
+
+}
+    .submit-button{
+        text-align: right;
+
+        button{
+            background-color: rgb(4,117,175);
+            color:white;
+        }
+    }

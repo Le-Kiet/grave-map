@@ -1,0 +1,13 @@
+.p-datatable .p-column-header-content {
+    pointer-events: auto !important;
+    z-index: 1 !important;
+  }
+  .p-datatable-thead{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.admin-table  .p-datatable-table  .p-datatable-thead tr th{
+  padding:12px;
+}

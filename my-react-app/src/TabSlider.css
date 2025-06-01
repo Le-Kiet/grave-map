@@ -1,0 +1,9 @@
+.header{
+    header
+    {
+        width: unset !important;
+        background-color: white;
+        border-bottom: 5px solid rgb(205, 205, 205);
+        box-shadow: unset;
+    }
+}

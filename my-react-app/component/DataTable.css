@@ -1,0 +1,27 @@
+table{
+    border-collapse: collapse;
+}
+.datatable-header {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    /* border-spacing: 0px; */
+    th {
+        padding:10px;
+        border:1px solid rgb(206, 206, 206);
+        /* white-space: nowrap; */
+    margin:0px;
+    }
+}
+.datatable-content{
+    font-size: 16px;
+    td{
+        padding:4px 10px;
+        border:1px solid rgb(206, 206, 206);
+        /* white-space: nowrap; */
+    }
+}
+.table-container {
+    overflow-x: auto;
+    max-width: 100%; 
+}

@@ -1,0 +1,12 @@
+.data-dialog-map-container{
+    width: 600px;
+    height:auto;
+    .leaflet-container{
+        width: 93% !important;
+        height: 400px !important;}
+}
+.data-dialog-map{
+    .leaflet-container{
+    width: 95% !important;
+    height: 400px !important;}
+}

@@ -1,0 +1,213 @@
+.leaflet-container {
+    width: 100%; /* Hoặc chiều rộng cụ thể */
+    height: 400px; /* Chiều cao cụ thể */
+}
+.selected-marker{
+    background-color: red !important; /* Màu nền đỏ cho marker đã chọn */
+    fill:red !important; /* Màu nền đỏ cho marker đã chọn */
+    color:red !important; /* Màu nền đỏ cho marker đã chọn */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white; /* Đường viền trắng */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Đổ bóng nhẹ */
+}
+.leaflet-marker-icon.selected-marker {
+    filter: hue-rotate(120deg); /* Xanh lá */
+}
+.demo-map-container{
+    .leaflet-container{
+    /* width:100% !important; */
+    height:1000px !important;
+}
+}
+.popup-icon{
+    margin: 8px !important;
+    display: "flex";
+    align-items: "center";
+    font-size: 16px;
+    font-weight: 550;
+}
+.custom-popup{
+    width: 600px;
+}
+.leaflet-popup{
+    width:500px;
+
+}
+.leaflet-popup-content{
+    position: relative;
+    width:90% !important;
+}
+.image-gallery-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0; /* Initially hide the buttons */
+    transition: opacity 0.2s ease-in-out; /* Smooth transition */
+}
+@media (max-width: 1000px) {
+  .leaflet-top.leaflet-right .leaflet-routing-container {
+    /* bottom: 0px; */
+    left: 0px;
+    top:unset !important;
+    padding-left: 20px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    font-size: 12px;
+    z-index: 1000;
+  }
+.leaflet-routing-alt{
+    height:150px;
+}
+  .leaflet-top.leaflet-right {
+    top: unset;
+    right: unset !important;
+    bottom:360px;
+    left: 0px;
+  }
+  .leaflet-routing-alt table{
+    max-height: 100px;
+  }
+}
+/* .leaflet-top.leaflet-right .leaflet-routing-container {
+    bottom: 60px;        
+    right: 20px;      
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+            left: 0%;
+    top: 23%;
+    transform: translateX(0%);
+} */
+.nav-button.prev {
+    left: 10px;
+}
+
+.nav-button.next {
+    right: 10px;
+}
+
+.image-wrapper:hover .nav-button {
+    opacity: 1; /* Show buttons on hover */
+}
+.leaflet-pane{
+    .marker-cluster{
+        span{
+            color:red;
+            font-weight: 800;
+            font-size: 24px;
+        }
+    }
+}
+.gps-icon-google {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gps-icon-pulse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(66, 133, 244, 0.3);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 1;
+}
+
+.gps-icon-inner {
+    width: 12px;
+    height: 12px;
+    background: #4285f4;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.gps-icon-google {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gps-icon-pulse {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.422);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 1;
+}
+.leaflet-right{
+    right:50px !important
+    
+}
+.gps-icon-inner {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+}
+.gps-icon-inner-center {
+    width: 12px;
+    height: 12px;
+    background: #000000;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

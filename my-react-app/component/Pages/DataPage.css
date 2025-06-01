@@ -1,0 +1,400 @@
+.data-page-container{
+    display: flexbox;
+    flex:3;
+    max-width: 100%
+}
+.data-table-container{
+    flex-grow: 1; 
+    overflow-x: auto;     max-width: 95%;
+    min-width: 95%;
+}
+.p-multiselect{
+    border-radius: 12px;
+    border: 1px solid black;
+    padding:10px;
+    display: inline-flex;
+        user-select: none;
+        cursor: pointer;
+}
+.p-multiselect-panel{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid black;
+    border-top: none;
+    padding:10px;
+    background-color: white;
+    background: #ffffff;
+    color: #4b5563;
+    border: 0 none;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.p-multiselect-panel .p-multiselect-header {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    background: #f9fafb;
+    margin: 0;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.p-multiselect-items-wrapper {
+    overflow: auto;
+    max-height: 200px;
+}
+.p-multiselect-panel .p-multiselect-items {
+    padding: 0.75rem 0;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+    color: #0e7490;
+    background: #ecfeff;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item {
+    margin: 0;
+    padding: 0.75rem 1.25rem;
+    border: 0 none;
+    color: #4b5563;
+    background: transparent;
+    transition: box-shadow 0.2s;
+    border-radius: 0;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item:last-child {
+    margin-bottom: 0;
+}
+.p-multiselect-item {
+    cursor: pointer;
+    display: flex
+;
+    align-items: center;
+    font-weight: normal;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+    color: #0e7490;
+    background: #ecfeff;
+}
+.multiple-select:hover{
+    border:1px solid #748e93 
+}
+.p-checkbox > .p-checkbox-input{
+    display:none ;
+}
+.p-multiselect-header .p-checkbox-input{
+    display:block !important;
+}
+.p-checkbox.p-highlight .p-checkbox-box {
+    border-color: #748588;
+    background: #648389;
+}
+.p-checkbox .p-checkbox-input {
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+}
+.p-checkbox .p-checkbox-box {
+    border: 2px solid #d1d5db;
+    background: #ffffff;
+    width: 22px;
+    height: 22px;
+    color: #4b5563;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    outline-color: transparent;
+}
+.p-checkbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-multiselect-checkbox{
+    margin-right: 6px;
+}
+.data-table {
+    min-width: 600px; 
+    max-width: 95%;
+}
+.important{
+    color: red;
+
+}
+.error{
+    color:red;
+    font-size: 12px;
+    margin-top:4px;
+}
+.add-icon{
+    fill:green;
+    margin-left:4px;
+    svg{
+        height: 80px;
+    }
+    cursor: pointer;
+    :hover{
+        fill:lawngreen
+    }
+}
+.icon-column{
+    display: flex;
+    justify-content: space-between;
+}
+.update-icon{
+    color:rgb(250, 194, 11);
+    svg{
+        height: 80px;
+    }
+    cursor: pointer;
+    :hover{
+        color:yellow
+    }
+}
+.delete-icon{
+    fill:red;
+    svg{
+        height: 80px;
+    }
+    cursor: pointer;
+    :hover{
+        fill:rgb(147, 0, 0)
+    }
+}
+.dialog{
+    background-color: white !important;
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.dialog-delete{
+    background-color: white;
+    padding:12px;
+    text-align: center;
+    border: 2px solid rgb(197, 196, 196);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+.active-slider{
+    /* border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black; */
+    background-color: gray;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; 
+    margin:unset;
+}
+.active-slider:hover{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; 
+}
+.tab-header{
+    padding-top:10px;
+    padding-left:10px;
+    border-bottom: 1px solid gray;
+
+    button{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;  
+        margin:unset
+    }
+}
+.tab-content{
+    padding-top:12px;
+}
+.p-datatable {
+    border-collapse: collapse; /* Đảm bảo các ô không có khoảng cách giữa */
+}
+
+.p-datatable .p-datatable-thead > tr > th,
+.p-datatable .p-datatable-tbody > tr > td {
+    border: 1px solid #ddd; /* Thêm viền cho các ô */
+    padding: 8px; /* Thêm khoảng cách bên trong ô */
+    text-align: left; /* Canh trái cho nội dung */
+}
+
+.p-datatable .p-datatable-thead > tr {
+    background-color: #2b1515; /* Màu nền cho hàng tiêu đề */
+}
+.data-table{
+    margin-right: 60px;
+    width: -webkit-fill-available;
+}
+.table-header{
+    margin-bottom:8px;
+}
+.p-datatable-wrapper{
+    border: 1px solid #606060;
+}
+.p-component {
+    font-family: var(--font-family);
+    font-feature-settings: var(--font-feature-settings, normal);
+    font-size: 1rem;
+    font-weight: normal;
+}
+.p-datatable-table {
+    border-spacing: 0px;
+    width: 100%;
+}
+.p-datatable .p-datatable-thead > tr > th {
+    text-align: left;
+    padding: 1rem 1rem;
+    border: 1px solid #606060;
+    border-width: 0 0 1px 0;
+    font-weight: 700;
+    color: #374151;
+    background: #f9fafb;
+    transition: box-shadow 0.2s;
+    padding:0px 8px;
+    span{
+        margin-right:8px;
+    }
+    .p-fluid{
+        margin-left: 0px;
+    }
+    button{
+        padding:6px;
+    }
+}
+.p-datatable .p-sortable-column {
+    cursor: pointer;
+    user-select: none;
+}
+
+.p-column-filter-overlay{
+    background-color: white;
+    padding:12px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.p-column-filter-operator{
+    padding:6px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.p-column-filter-constraints{
+    .p-column-filter-matchmode-dropdown, .p-column-filter{
+    padding:6px;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-top:8px;
+}
+}
+.p-icon-field {
+    position: relative;
+}
+.p-inputtext:enabled:hover {
+    border-color: #06b6d4;
+}
+.p-icon-field-left > .p-inputtext {
+    padding-left: 2.5rem;
+}
+.p-input-icon-left > .p-inputtext {
+    font-family: var(--font-family);
+    font-feature-settings: var(--font-feature-settings, normal);
+    font-size: 1rem;
+    color: #4b5563;
+    background: #ffffff;
+    padding: 6px;
+    border: 1px solid #363e48;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
+    outline-color: transparent;
+}
+.p-input-icon-left > .p-inputtext:focus-visible{
+    border: 2px solid #363e48;
+
+}
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(100, 99, 99);
+    border-radius: 20px;    max-width: 50%;
+}
+
+.file-name {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    margin-left: 16px; /* Khoảng cách giữa tên file và nút */
+    white-space: nowrap; /* Không xuống dòng */
+    overflow: hidden; /* Ẩn phần thừa */
+    text-overflow: ellipsis; /* Hiển thị ba chấm nếu tên file quá dài */
+}
+
+.file-input {
+    display: none; /* Ẩn input file gốc */
+}
+
+.file-upload-button {
+    color: black; /* Màu chữ */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border: none; /* Không viền */
+    cursor: pointer; /* Con trỏ chuột */
+    border-left: 1px  solid black ;
+}
+
+.file-upload-button:hover {
+    cursor: pointer;
+    
+}
+
+/* adminPAge */
+.active-permission{
+    background:greenyellow !important;
+}
+.none{
+    background: red
+}
+
+/* DataTable Component */
+.update-role-dialog-container{
+    display: flex;
+    flex-direction: column;
+}
+.role-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px; 
+    margin-bottom:12px;
+}
+.legend {
+    display: flex;
+    margin-bottom: 1rem; /* Khoảng cách dưới cùng */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem; /* Khoảng cách giữa các mục */
+}
+
+.active-indicator {
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow; /* Màu xanh lá */
+    border-radius: 50%; /* Hình tròn */
+    margin-right: 5px; /* Khoảng cách bên phải */
+}
+
+.inactive-indicator {
+    width: 20px;
+    height: 20px;
+    background-color: red; /* Màu đỏ */
+    border-radius: 50%; /* Hình tròn */
+    margin-right: 5px; /* Khoảng cách bên phải */
+}
+.custom-datepicker {
+    padding:6px;
+}
+
+.data-table .p-column-header-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input-container-fire-warning{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Two columns */
+    gap: 12px !important; /* Space between input groups */
+    width: 450px !important;
+}

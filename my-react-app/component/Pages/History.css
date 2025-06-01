@@ -1,0 +1,66 @@
+.home-container {
+    text-align: center;
+    background-color: #fff;
+    /* border: 5px solid red; */
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    height: 90vh; /* Chiều cao toàn bộ viewport */
+
+}
+
+.title {
+    background-color: #ffff99;
+    padding: 10px;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid #ffcc99;
+    margin-top:0px;
+}
+.button-wrapper{
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    height: inherit;
+}
+.button-format{
+    background-color: #0033cc;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.row-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 90%;
+
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+}
+/* Example: Style all direct children of .row-buttons */
+.row-buttons > * {
+    background-color: #0033cc;
+}
+.footer {
+    background-color: #00bfff;
+    color: white;
+    font-style: italic;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+}
+.table-container-landscape{
+    align-items: center;
+    justify-content: center;
+}

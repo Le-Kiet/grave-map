@@ -1,0 +1,27 @@
+.map-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .highlight {
+    background-color: black;
+    color:black;
+    opacity: 0;
+  }
+  .table-status-icon{
+    margin:6px;
+    /* position: absolute; */
+    /* display: block; */
+    /* svg{
+      padding: 12px;
+      path {
+        height: 20px;
+      }
+    } */
+  }

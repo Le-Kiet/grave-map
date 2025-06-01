@@ -1,0 +1,158 @@
+.content-container{
+    flex:3;
+    border-left:1px solid rgb(206, 206, 206);
+
+}
+.content{
+  width: 100%;
+
+    img{
+        width: 100%;
+        height: 400px;
+    }
+}
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: white;
+    padding: 2px 10px;
+    /* box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);  */
+    background-color: white; 
+}
+.button{
+    padding:10px;
+    border:solid 1px rgb(199, 199, 199);
+    border-radius: 10px;
+    
+}
+.combobox{
+    display: flex;
+    align-items: center;
+    select{
+        margin:6px;
+        padding:10px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+}
+.content-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid rgb(199, 199, 199);
+    div:first-child{
+        margin-left:8px;
+    }
+}
+.close-table{
+    display:none
+}
+.dialog {
+    position: fixed;
+    max-width: 1900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Đẩy dialog về chính giữa */
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000000; /* Đảm bảo nó nằm trên bản đồ */
+    height: auto; /* Tùy chỉnh chiều cao */
+    border-radius: 10px; /* Thêm bo tròn nếu cần */
+}
+
+.dialog-content {
+    /* background: white; */
+    padding: 20px;
+    /* border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Two columns */
+    gap: 12px; /* Space between input groups */
+    max-height: 500px;
+    overflow: scroll;
+    width: 1000px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.input-group label {
+    margin-bottom: 8px; /* Space between label and input */
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+.button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+    cursor:pointer
+}
+button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+    cursor:pointer;
+    border-radius: 6px;
+    background-color: gray;
+}
+.close-button .search-button {
+    padding: 10px 15px; /* Add padding for better spacing */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.search-button {
+    background-color: #4CAF50; /* Green for search button */
+}
+
+.close-button{
+    background-color: #f44336; /* Red for close button */
+}
+
+button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/*  */
+.dialog-testing {
+    padding: 10px;
+    background-color: white;
+    box-shadow: white;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    cursor: move;
+    user-select: none; /* Ngăn chặn chọn văn bản khi kéo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 12px;
+    .resizer {
+        width: 15px;
+        height: 15px;
+        background: #007bff;
+        color:red;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        cursor: nwse-resize; /* Con trỏ thay đổi khi di chuột vào góc */
+    }
+}
+

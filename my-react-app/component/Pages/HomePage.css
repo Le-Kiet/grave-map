@@ -1,0 +1,189 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100vh;
+}
+.home-container {
+    text-align: center;
+    background-color: #fff;
+    /* border: 5px solid red; */
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    height: 90vh; /* Chiều cao toàn bộ viewport */
+
+}
+
+.data-table-mobile{
+  max-height: calc(100vh - 210px); /* hoặc chiều cao cụ thể, ví dụ 400px */
+  overflow-y: hidden;
+  position: relative;
+  height: 400px;
+                 justify-content: unset !important;
+
+}
+.title {
+    background-color: #ffff99;
+    padding: 10px;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid #ffcc99;
+    margin-top:0px;
+}
+.button-wrapper{
+        display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.button-wrapper button {
+    background-color: #0033cc;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.button-wrapper-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 90%;
+}
+.button-wrapper-mobile button{
+    background-color: #0033cc;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.row-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 90%;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+}
+.row-buttons button {
+    padding: 12px 8px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 60px; /* 🔑 Đặt chiều cao cố định để hàng cân */
+}
+.footer {
+    background-color: #00bfff;
+    color: white;
+    font-style: italic;
+    padding: 10px;
+    /* position: absolute; */
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+  .home-container {
+        text-align: center;
+    background-color: #fff;
+
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .title {
+    background-color: #ffff99;
+    padding: 4px;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    border: 3px solid #ffcc99;
+    margin-bottom: 0px;
+    margin-top:20px;
+  }
+
+  .row-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .row-buttons button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.home-container-mobile {
+            text-align: center;
+    background-color: #fff;
+    font-size: 12px;
+    /* border: 5px solid red; */
+    box-sizing: border-box;
+    position: relative;
+    height:100vh; /* Chiều cao toàn bộ viewport */
+}
+.home-container-mobile .button-wrapper{
+        justify-content: flex-start;
+}
+.column-buttons {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    font-size: 4px;
+}
+.column-buttons button{
+    font-size: 12px;
+}
+@media screen and (orientation: landscape) {
+    .home-container-mobile {
+        font-size: 11px !important; /* nhỏ hơn để vừa màn */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title{
+      margin-bottom: 0px;
+    }
+    .column-buttons {
+      font-size: 11px !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 11px !important;
+    }
+
+    .footer {
+        font-size: 10px;
+        
+    }
+}
+.logout-button:hover {
+    background-color: #ff0000;
+    color: white; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+
+}

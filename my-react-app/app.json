@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "MyReactNativeApp",
+    "slug": "my-react-native-app",
+    "version": "1.0.0",
+    "platforms": ["android", "ios", "web"]
+  }
+}
