@@ -21,3 +21,22 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+# Laravel default
+/vendor
+/node_modules
+.env
+/public/storage
+/storage/*.key
+.env.backup
+.idea
+.phpunit.result.cache
+
+# React or Vite frontend
+my-react-app/
+dist/
+
+# IDE/editor files
+*.log
+*.DS_Store
+*.vscode
